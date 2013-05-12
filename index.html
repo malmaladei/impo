@@ -3,16 +3,14 @@
 <a href="./page2.html">To page2.html with href</a>
 <hr>
 
+<a class="jstest">To page2.html with js touchend</a>
+
 <script>
-$('.jstest').on('click touchend', function(ev){
-
-    $(this).preventDefault();
-    window.location = $(this).attr('href');
-
+$('.jstest').bind('touchstart', function(e){
+    e.stopPropagation();
+    location.href = './page2.html';
 });
 </script>
-
-<a class="jstest" href="./page2.html">To page2.html with js touchend</a>
 
 </body>
 </html>
