@@ -1,25 +1,20 @@
-<html>
-
-<head>
-<script>
-$('.jstest').bind('touchstart', function(e){
-    e.stopPropagation();
-    location.href = './page2.html';
-});
-</script>
-</head>
-
-<body style="background-color:grey;">
-
-<h1>Index</h1>
-
-<hr>
-Lorem ipsum
-
-
-<hr>
-
-<a href="./page2.html"><img src="button-red.png" border="0" style="margin-left:30px;" /></a> <a href="./index.html"><img src="button-blue.png" border="0" style="float:left;" /></a>
-
-</body>
-</html>
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script>
+				$('.jstest').bind('touchstart', function(e){
+    				e.stopPropagation();
+    				location.href = './page2.html';
+				});
+			</script>
+		</head>
+		<body style="background-color:grey;">
+			<h1>Index</h1>
+			<hr>
+			Lorem ipsum
+			
+			<a href="./jquery-mob.html">jQuery mob test</a>
+			<hr>
+			<a href="./page2.html"><img src="button-red.png" border="0" style="margin-left:30px;" /></a> <a href="./index.html"><img src="button-blue.png" border="0" style="float:left;" /></a>
+		</body>
+	</html>
